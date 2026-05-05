@@ -1,13 +1,17 @@
 {
   "name": "Fooocus",
-  "description": "Fooocus via Pinokio",
-  "install": [
-    "git clone https://github.com/lllyasviel/Fooocus.git app",
-    "cd app",
-    "pip install -r requirements_versions.txt"
-  ],
+  "description": "Fooocus launcher",
   "run": [
-    "cd app",
-    "python entry_with_update.py --always-high-vram"
+    {
+      "method": "shell.run",
+      "params": {
+        "cmd": [
+          "git clone https://github.com/lllyasviel/Fooocus.git || true",
+          "cd Fooocus",
+          "pip install -r requirements_versions.txt",
+          "python entry_with_update.py --always-high-vram"
+        ]
+      }
+    }
   ]
 }
