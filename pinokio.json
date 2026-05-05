@@ -1,6 +1,6 @@
 {
-  "name": "Fooocus Auto Setup",
-  "description": "Run Fooocus easily via Pinokio",
+  "name": "Fooocus",
+  "description": "Fooocus via Pinokio",
   "install": [
     "git clone https://github.com/lllyasviel/Fooocus.git app",
     "cd app",
